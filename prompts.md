@@ -2,32 +2,46 @@
 
 ## Ferramentas consultadas
 
-Para apoiar o desenvolvimento da atividade, foram consultadas diferentes ferramentas de inteligência artificial com foco em comparação de soluções e organização do projeto:
+Durante o desenvolvimento da atividade foram consultadas três ferramentas de inteligência artificial com o objetivo de comparar abordagens de implementação e organização do projeto:
 
-- Claude (Anthropic)
-- Google Gemini
-- Perplexity AI
+* ChatGPT
+* Claude (Anthropic)
+* Google Gemini
 
 ## Prompt utilizado
 
 Prompt inicial:
 
-"Desenvolver uma aplicação web utilizando HTML, CSS e JavaScript puro contendo uma tela de login e um CRUD completo para uma lista de itens. O login deve validar usuário e senha específicos, exibir mensagens de erro na tela e permitir acesso à lista apenas após autenticação correta. A lista deve possuir itens iniciais e permitir adicionar no início e no final, editar e remover individualmente, com atualização dinâmica da tela e validações para campos vazios. Os dados devem ser armazenados em um array de strings e a lógica deve estar organizada em funções nomeadas."
+"Desenvolver uma aplicação web utilizando HTML, CSS e JavaScript puro, sem frameworks ou bibliotecas externas. A aplicação deve possuir uma tela de login inicialmente visível e uma área de CRUD inicialmente oculta.
 
-Ao longo dos testes, o prompt recebeu pequenos refinamentos para garantir aderência às regras da atividade e adequação ao tema escolhido.
+O login deve validar usuário 'aluno' e senha 'fiap2025', exibindo mensagens de erro na própria interface em caso de campos vazios ou credenciais incorretas.
 
-## Comparação das respostas
+Após autenticação correta, o usuário deve acessar uma lista dinâmica com CRUD completo utilizando um array de strings contendo pelo menos três itens iniciais.
 
-As ferramentas consultadas apresentaram soluções semelhantes em estrutura geral, porém com diferenças no nível de detalhamento e atendimento dos requisitos.
+A aplicação deve permitir adicionar itens no início e no final da lista, visualizar os itens dinamicamente, editar itens individualmente e removê-los pela posição no array.
 
-O Claude apresentou código mais organizado e explicações claras sobre a lógica utilizada.
+As seguintes validações devem ser respeitadas: login não pode ser enviado vazio, itens não podem ser cadastrados vazios e, ao editar, caso o usuário cancele ou deixe vazio, o item original deve permanecer sem alteração.
 
-O Gemini trouxe uma implementação funcional, mas exigindo ajustes relacionados à organização e alguns detalhes de validação.
+Toda modificação realizada deve atualizar automaticamente a interface e a lógica deve permanecer organizada em funções nomeadas, utilizando apenas recursos compatíveis com JavaScript introdutório."
 
-O Perplexity foi utilizado principalmente como apoio de consulta e comparação das abordagens sugeridas.
+Refinamento realizado:
+
+Após as primeiras respostas, o prompt recebeu pequenos ajustes relacionados à organização da interface, validações obrigatórias e adequação ao tema escolhido para a aplicação, denominado "Jogos Favoritos".
+
+## Observações sobre as respostas
+
+As respostas apresentaram propostas semelhantes em relação à estrutura geral do sistema, porém com diferenças no nível de detalhamento e no atendimento dos requisitos.
+
+O Claude apresentou uma boa organização do código e explicações claras sobre a lógica utilizada.
+
+O Gemini trouxe uma implementação funcional, porém exigindo adaptações relacionadas a validações e organização das funções.
+
+O ChatGPT apresentou uma solução mais próxima dos requisitos propostos, com melhor separação das funcionalidades e maior aderência às regras da atividade.
 
 ## Escolha da solução base
 
-A estrutura utilizada como referência foi a proposta apresentada pelo Claude, por demonstrar melhor organização do código e maior proximidade com os requisitos da atividade.
+A solução utilizada como referência principal foi a proposta apresentada pelo ChatGPT.
 
-Durante o desenvolvimento foram realizados ajustes, personalizações visuais e adequações relacionadas ao tema escolhido, garantindo que a aplicação final atendesse integralmente ao que foi solicitado.
+A escolha ocorreu pela organização da lógica em funções nomeadas, uso adequado do array de strings e implementação mais alinhada às exigências da atividade.
+
+Durante o desenvolvimento, foram realizados ajustes e personalizações relacionadas ao tema "Jogos Favoritos", organização visual e adequação do comportamento das funcionalidades para garantir o atendimento completo dos requisitos.
